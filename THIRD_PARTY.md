@@ -4,7 +4,7 @@ The grammars in `syntaxes/` come from these sources.
 
 | File | Source | License |
 | --- | --- | --- |
-| `ruby.tmLanguage.json` | [Shopify/ruby-lsp](https://github.com/Shopify/ruby-lsp) `vscode/grammars/ruby.cson.json`, converted from [atom/language-ruby @ f4082a0](https://github.com/atom/language-ruby/commit/f4082a02f467f8b253449d6998226fdea0957efa). Copied unchanged. | MIT (Shopify Inc.; GitHub Inc.) |
+| `ruby.tmLanguage.json` | [Shopify/ruby-lsp](https://github.com/Shopify/ruby-lsp) `vscode/grammars/ruby.cson.json`, converted from [atom/language-ruby @ f4082a0](https://github.com/atom/language-ruby/commit/f4082a02f467f8b253449d6998226fdea0957efa). Two rules are added after the kernel-method rule: Rails methods such as `has_many` and `link_to`, called without parentheses, get the scope `entity.name.function.rails.ruby`. | MIT (Shopify Inc.; GitHub Inc.) |
 | `erb.tmLanguage.json` | Shopify/ruby-lsp `vscode/grammars/erb.cson.json`. The `injections` block is removed; its `<% %>` rules are the root patterns and the `erb-tags` rule. | MIT (Shopify Inc.) |
 | `html.tmLanguage.json` | [microsoft/vscode](https://github.com/microsoft/vscode) `extensions/html/syntaxes/html.tmLanguage.json`, converted from [textmate/html.tmbundle @ 0c3d5ee](https://github.com/textmate/html.tmbundle/commit/0c3d5ee54de3a993f747f54186b73a4d2d3c44a2). The `injections` block is removed and `{ "include": "text.html.erb#erb-tags" }` is the first pattern of every rule that has a pattern list, except the `comment` rule. | TextMate Bundle License |
 

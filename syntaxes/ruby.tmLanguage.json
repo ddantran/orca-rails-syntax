@@ -310,6 +310,16 @@
       "name": "support.function.kernel.ruby"
     },
     {
+      "comment": "Rails methods called without parentheses; the call rule at the end of the list handles the parenthesized form",
+      "match": "(?<![\\w.:@$])\\b(?:has_many|has_one|belongs_to|has_and_belongs_to_many|validates|validates_presence_of|validates_uniqueness_of|validates_length_of|validates_numericality_of|validates_format_of|validates_inclusion_of|validates_exclusion_of|validates_acceptance_of|validates_confirmation_of|validates_associated|validates_each|validates_with|default_scope|accepts_nested_attributes_for|store_accessor|attr_readonly|has_secure_password|has_secure_token|has_one_attached|has_many_attached|has_rich_text|before_validation|after_validation|before_save|around_save|after_save|before_create|around_create|after_create|before_update|around_update|after_update|before_destroy|around_destroy|after_destroy|after_commit|after_create_commit|after_update_commit|after_destroy_commit|after_save_commit|after_rollback|after_initialize|after_find|after_touch|broadcasts_to|before_action|after_action|around_action|skip_before_action|skip_after_action|skip_around_action|prepend_before_action|append_before_action|helper_method|protect_from_forgery|rescue_from|respond_to|render|redirect_to|redirect_back|redirect_back_or_to|send_data|send_file|http_basic_authenticate_with|link_to|button_to|link_to_if|link_to_unless|mail_to|form_with|form_for|form_tag|fields_for|content_tag|content_for|image_tag|video_tag|audio_tag|favicon_link_tag|stylesheet_link_tag|javascript_include_tag|javascript_importmap_tags|csrf_meta_tags|csp_meta_tag|turbo_frame_tag|turbo_stream_from|number_to_currency|number_to_human|number_to_percentage|number_with_delimiter|time_ago_in_words|distance_of_time_in_words|simple_format|pluralize|strip_tags|url_for|text_field|text_area|password_field|hidden_field|check_box|radio_button|file_field|number_field|email_field|phone_field|date_field|search_field|collection_select|options_for_select|select_tag|label_tag|text_field_tag|submit_tag|check_box_tag|hidden_field_tag)\\b(?![?!(]|:(?!:)|\\s*=[^=~>])",
+      "name": "entity.name.function.rails.ruby"
+    },
+    {
+      "comment": "Generic names count as Rails methods only when an argument follows, so a variable with the same name stays plain",
+      "match": "(?<![\\w.:@$])\\b(?:scope|enum|delegate|store|attribute|serialize|validate|layout|resource|resources|namespace|concern|concerns|head|sanitize|normalizes|encrypts|broadcasts)\\b(?=[ \\t]+(?!(?:if|unless|while|until|and|or|then|do|end|rescue|ensure|in|not|else|elsif)\\b)(?::[\\w\\\"']|[\\\"'@\\[]|->|\\w))",
+      "name": "entity.name.function.rails.ruby"
+    },
+    {
       "match": "\\b[_A-Z]\\w*\\b",
       "name": "variable.other.constant.ruby"
     },
