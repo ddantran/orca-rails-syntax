@@ -1,5 +1,7 @@
 # Rails Syntax
 
+![Rails Syntax: Ruby and ERB highlighting in Orca, shown with the Catppuccin Mocha theme](images/cover.png)
+
 Ruby and ERB syntax highlighting for Orca, built from the TextMate grammars of the
 [Ruby LSP](https://github.com/Shopify/ruby-lsp) VS Code extension.
 
@@ -16,7 +18,7 @@ views stay plain.
 
 ## Install
 
-In Orca's plugin settings, paste the GitHub URL of this repository:
+In Orca, open Settings → Plugins, choose Add plugin, then From a Git URL…, and paste:
 
 ```
 https://github.com/ddantran/orca-rails-syntax

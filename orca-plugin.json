@@ -2,7 +2,7 @@
   "manifestVersion": 2,
   "id": "rails-syntax",
   "name": "Rails Syntax",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Ruby and ERB syntax highlighting for Rails, using the grammars of the Ruby LSP VS Code extension.",
   "author": {
     "name": "DDan",
