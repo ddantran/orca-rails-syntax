@@ -2,7 +2,7 @@
   "manifestVersion": 2,
   "id": "rails-syntax",
   "name": "Rails Syntax",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Ruby and ERB syntax highlighting for Rails, using the grammars of the Ruby LSP VS Code extension.",
   "author": {
     "name": "DDan",
@@ -39,15 +39,11 @@
         "path": "syntaxes/ruby.tmLanguage.json",
         "configuration": "syntaxes/ruby-configuration.json",
         "extensions": [
-          ".rb", ".builder", ".eye", ".fcgi", ".gemspec", ".god", ".irbrc", ".jbuilder",
-          ".mspec", ".pluginspec", ".podspec", ".prawn", ".pryrc", ".rabl", ".rake", ".rbi",
-          ".rbuild", ".rbw", ".rbx", ".ru", ".ruby", ".spec", ".thor", ".watchr"
+          ".rb", ".rake", ".gemspec", ".ru", ".jbuilder", ".builder", ".rbi", ".podspec"
         ],
         "filenames": [
-          ".irbrc", ".pryrc", ".simplecov", "Appraisals", "Berksfile", "Brewfile", "Buildfile",
-          "Capfile", "Dangerfile", "Deliverfile", "Fastfile", "Gemfile", "Guardfile", "Jarfile",
-          "Mavenfile", "Podfile", "Puppetfile", "Rakefile", "Snapfile", "Steepfile", "Thorfile",
-          "Vagrantfile"
+          "Gemfile", "Rakefile", "Guardfile", "Capfile", "Podfile", "Fastfile", "Vagrantfile",
+          "Brewfile", "Buildfile"
         ]
       },
       {
