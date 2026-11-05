@@ -2,7 +2,7 @@
   "manifestVersion": 2,
   "id": "rails-syntax",
   "name": "Rails Syntax",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Ruby and ERB syntax highlighting for Rails, using the grammars of the Ruby LSP VS Code extension.",
   "author": {
     "name": "DDan",
@@ -10,6 +10,22 @@
   },
   "repository": "https://github.com/ddantran/orca-rails-syntax",
   "license": "MIT",
+  "cover": {
+    "path": "images/cover.png",
+    "alt": "A Rails model with highlighted Ruby in an editor window, shown with the Catppuccin Mocha theme, next to the title Rails Syntax"
+  },
+  "screenshots": [
+    {
+      "path": "images/erb-view.png",
+      "alt": "An ERB view where <% %> tags highlight as Ruby in text and inside HTML attributes, shown with the Catppuccin Mocha theme",
+      "caption": "ERB views, shown with Catppuccin Mocha"
+    },
+    {
+      "path": "images/controller.png",
+      "alt": "A Rails controller with highlighted callbacks, redirect_to and render calls, shown with the Catppuccin Mocha theme",
+      "caption": "Controllers, shown with Catppuccin Mocha"
+    }
+  ],
   "engines": {
     "orca": ">=1.4.246"
   },
