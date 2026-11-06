@@ -1,5 +1,7 @@
 # Rails Syntax
 
+[![Orca installs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fonorca.dev%2Fplugins%2Fstats.json&query=%24.plugins%5B%27ddantran.rails-syntax%27%5D.installs&label=Orca%20installs)](https://onorca.dev/plugins/ddantran/orca-rails-syntax)
+
 ![Rails Syntax: Ruby and ERB highlighting in Orca, shown with the Catppuccin Mocha theme](images/cover.png)
 
 Ruby and ERB syntax highlighting for Orca, built from the TextMate grammars of the
