@@ -55,6 +55,14 @@
         "extensions": [".erb", ".rhtml", ".rhtm"]
       },
       {
+        "id": "slim",
+        "title": "Slim",
+        "scopeName": "text.slim",
+        "path": "syntaxes/slim.tmLanguage.json",
+        "configuration": "syntaxes/slim-configuration.json",
+        "extensions": [".slim"]
+      },
+      {
         "id": "html-for-erb",
         "title": "HTML (for ERB)",
         "scopeName": "text.html.basic",

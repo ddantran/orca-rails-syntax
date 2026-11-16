@@ -4,17 +4,20 @@
 
 ![Rails Syntax: Ruby and ERB highlighting in Orca, shown with the Catppuccin Mocha theme](images/cover.png)
 
-Ruby and ERB syntax highlighting for Orca, built from the TextMate grammars of the
+Ruby, ERB and Slim syntax highlighting for Orca, built from the TextMate grammars of the
 [Ruby LSP](https://github.com/Shopify/ruby-lsp) VS Code extension.
 
 - **Ruby:** for the files below, Orca uses this plugin's grammar instead of its built-in Ruby highlighting.
 - **ERB:** adds highlighting for ERB views.
+
+- **Slim:** adds highlighting for `.slim` views (so `.html.slim`), with Ruby highlighted in `=`, `-` and `#{}`.
 - **Rails:** methods like `belongs_to`, `before_action` and `link_to` get the function color.
 
 | Language | Files |
 | --- | --- |
 | Ruby | `.rb`, `.rake`, `.gemspec`, `.ru`, `.jbuilder`, `.builder`, `.rbi`, `.podspec`, `Gemfile`, `Rakefile`, `Guardfile`, `Capfile`, `Podfile`, `Fastfile`, `Vagrantfile`, `Brewfile`, `Buildfile` |
 | ERB | `.erb` (so `.html.erb`), `.rhtml`, `.rhtm` |
+| Slim | `.slim` (so `.html.slim`) |
 
 `<% %>` and `<%= %>` highlight as Ruby in text, tag bodies and attribute values. Colors come from
 the grammar scopes only: Ruby LSP's server-side semantic tokens are not part of this plugin. CSS
